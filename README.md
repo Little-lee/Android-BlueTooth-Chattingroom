@@ -1,6 +1,5 @@
-# Text
+# Android蓝牙聊天室
 
-Android蓝牙聊天室
 
 对话界面看 show.jpg
 
