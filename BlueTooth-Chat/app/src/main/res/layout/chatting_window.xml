@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#2B2B2B">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2B2B2B"
+            android:text="结束"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:id="@+id/quitbtn"
+            />
+        <TextView
+            android:id="@+id/devId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:text="BlueTooth-Chat"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2B2B2B"
+            android:text="加密模式"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:id="@+id/secretBtn"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/myWindow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#fcfcfc"
+        >
+
+        <ListView
+            android:id="@+id/messageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:listSelector="#fcfcfc"
+            android:background="#fcfcfc"
+            android:padding="4dp"
+            android:scrollingCache="false"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+             >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:background="#2B2B2B"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+
+                <View android:layout_width="0dip"
+                    android:layout_height="0dip"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/foc"/>
+
+                <EditText
+                    android:id="@+id/inputEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="10.33"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:hint="输入聊天内容"
+                    android:padding="8dp"
+                    android:textSize="18sp"
+                    >
+
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/sendBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:layout_margin="3dp"
+                    android:background="#87CEEB"
+                    android:text="发送" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
